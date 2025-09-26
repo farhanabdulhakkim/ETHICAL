@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login Page</title>
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -19,6 +18,17 @@
       align-items: center;
       height: 100vh;
       background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      flex-direction: column;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 120px; /* adjust as needed */
+      height: auto;
     }
 
     .login-container {
@@ -84,11 +94,18 @@
   </style>
 </head>
 <body>
+  <div class="logo">
+    <img
+      src="https://imgs.search.brave.com/CB0bcT1JLxZwoMKoBN6FOHHE_9n52tZXAOHCt4p-2S4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNy9Db2ltYmF0/b3JlX0luc3RpdHV0/ZV9vZl9UZWNobm9s/b2d5X2xvZ28ucG5n/LzI1MHB4LUNvaW1i/YXRvcmVfSW5zdGl0/dXRlX29mX1RlY2hu/b2xvZ3lfbG9nby5w/bmc"
+      alt="Logo"
+    />
+  </div>
+
   <div class="login-container">
     <h2>Login</h2>
     <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
     <p>Don't have an account? <a href="#">Sign up</a></p>
